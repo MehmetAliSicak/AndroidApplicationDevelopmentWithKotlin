@@ -1,7 +1,7 @@
-# Create a List with RecyclerView
+# Create an Alarm
 
-If your app needs to display a scrolling list of elements 
-based on large data sets (or data that frequently changes), you should use RecyclerView
+# with SKIP_UI
+![screenshot](https://github.com/MehmetAliSicak/AndroidApplicationDevelopmentWithKotlin/blob/master/IntentApp/AlarmClock/appimage/create%20alarm%20with%20skip_ui.png?raw=true)
 
-
-![screenshot](https://github.com/MehmetAliSicak/AndroidApplicationDevelopmentWithKotlin/blob/master/UserInterface/RecyclerViewApp/appimage/recyclerview-project-screen-phone.PNG?raw=true)
+# without SKIP_UI
+![screenshot](https://github.com/MehmetAliSicak/AndroidApplicationDevelopmentWithKotlin/blob/master/IntentApp/AlarmClock/appimage/create%20alarm%20without%20skip_ui.png?raw=true)
