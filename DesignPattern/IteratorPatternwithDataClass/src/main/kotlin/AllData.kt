@@ -1,6 +1,6 @@
 import com.mas.retrofitapp.iterator.Iterator
 
-var languages = ArrayList<City>()
+var cities = ArrayList<City>()
 
 class AllData : Container {
     override fun getIterator(): Iterator {
@@ -9,18 +9,18 @@ class AllData : Container {
     }
 
     private fun fillList() {
-        languages.add(City("01","Adana"))
-        languages.add(City("02","Adıyaman"))
-        languages.add(City("03","Afyon"))
-        languages.add(City("04","Ağrı"))
-        languages.add(City("05","Amasya"))
-        languages.add(City("06","Ankara"))
+        cities.add(City("01","Adana"))
+        cities.add(City("02","Adıyaman"))
+        cities.add(City("03","Afyon"))
+        cities.add(City("04","Ağrı"))
+        cities.add(City("05","Amasya"))
+        cities.add(City("06","Ankara"))
     }
 
     class Languages : Iterator {
         var index = 0
         override fun hasNext(): Boolean {
-            if (index < languages!!.size) {
+            if (index < cities!!.size) {
                 return true
             }
             return false
@@ -28,7 +28,7 @@ class AllData : Container {
 
         override fun next(): City? {
             if (this.hasNext()) {
-                return languages!!.get(index++)
+                return cities!!.get(index++)
             }
             return null
         }
