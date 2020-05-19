@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Programming Languages"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="318dp"
+        android:layout_height="349dp"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/ibRight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.13"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ibLeft"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.436" />
+
+    <!--android:onClick="left"
+     Bu öznitelik çok önemlidir. Bu butona tıklama yapılırsa
+     MainActivity.kt sınıfında bulunan "left" isimli metot çalışır.-->
+    <ImageButton
+        android:id="@+id/ibLeft"
+        android:layout_width="144dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/white"
+        android:onClick="left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/left" />
+
+    <!--android:onClick="left"
+     Bu öznitelik çok önemlidir. Bu butona tıklama yapılırsa
+     MainActivity.kt sınıfında bulunan "right" isimli metot çalışır.-->
+    <ImageButton
+        android:id="@+id/ibRight"
+        android:layout_width="144dp"
+        android:layout_height="91dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/white"
+        android:onClick="right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.226"
+        app:layout_constraintStart_toEndOf="@+id/ibLeft"
+        app:srcCompat="@drawable/right" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
