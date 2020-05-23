@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_answer_to_questions_dp_btn_get_question">11dp</dimen>
+    <dimen name="activity_answer_to_questions_margin">5dp</dimen>
+    <dimen name="activity_answer_to_questions_sp_tvs">15sp</dimen>
+
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1e73be</color>
+    <color name="colorPrimaryDark">#2c3f4d</color>
+    <!-- <color name="colorPrimaryDark">#303F9F</color>-->
+    <color name="colorAccent">#1e73be</color>
+    <color name="activity_answer_to_questions_rl_progress_background">#1e73be</color>
+    <color name="activity_answer_to_questions_ll_tvs">#fff</color>
+</resources>
